@@ -5,35 +5,87 @@
    ========================================================================== */
 
 
-.div1{
+.div1,
+.div2 {
 	background: #1e48b0;
 	color: white;
-	width: 20px;
-	height: 20px;
+	width: 27px;
+	height: 18px;
 	font-size: 12px;
 	font-weight: bold;
-	text-align: center;
 	border-radius: 2px;
+    text-align: left;
+    padding-left: 3px;
 }
 
-.div_gold{
-	border: 2px solid gold;
+.div2 {
+    background: #B0761E;
 }
 
-.div_silver{
-	border: 2px solid silver;
+.div_gold:before,
+.div_silver:before,
+.div_bronze:before {
+    background: goldenrod;
+    border: 1px solid goldenrod;
+    content: "";
+    width: 10px;
+    height: 10px;
+    margin-left: 10px;
+    margin-top: 4px;
+    display: block;
+    position: absolute;
+    border-radius: 10px;
 }
 
-.div_bronze{
-	border: 2px solid #cd7f32;
+.div_silver:before {
+    background: silver;
+    border-color: silver;
 }
 
+.div_bronze:before {
+    background: #c4621b;
+    border: 1px solid #c4621b;
 
+}
 
+td:nth-child(1) {
+    text-align: center;
+}
 
+table tr:nth-child(1) td:nth-child(1):before,
+table tr:nth-child(2) td:nth-child(1):before,
+table tr:nth-child(3) td:nth-child(1):before {
+    background: goldenrod;
+    border: 1px solid goldenrod;
+    content: "1";
+    width: 17px;
+    height: 17px;
+    display: block;
+    position: absolute;
+    border-radius: 10px;
+}
 
+table tr:nth-child(2) td:nth-child(1):before {
+    background: silver;
+    border-color: silver;
+    content: "2";
+}
+table tr:nth-child(3) td:nth-child(1):before {
+    background: #c4621b;
+    border: 1px solid #c4621b;
+    content: "3";
+}
 
+tr td:nth-child(3) {
+    color: #1964a0;
+    font-weight: bold;
+}
+tr td:last-child {
+    font-weight: bold;
+    color: #333;
+}
 
-
-
-
+tr td:last-child:before {
+    content: "+";
+    font-weight: normal;
+}
