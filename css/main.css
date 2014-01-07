@@ -1,0 +1,39 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+.div1{
+	background: #1e48b0;
+	color: white;
+	width: 20px;
+	height: 20px;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	border-radius: 2px;
+}
+
+.div_gold{
+	border: 2px solid gold;
+}
+
+.div_silver{
+	border: 2px solid silver;
+}
+
+.div_bronze{
+	border: 2px solid #cd7f32;
+}
+
+
+
+
+
+
+
+
+
+
